@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class InstagramProfile {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String name = scanner.next();
+        int followers = scanner.nextInt();
+        int posts = scanner.nextInt();
+        float hours = scanner.nextFloat();
+
+        // Format hours to 1 decimal place manually
+        String hoursFormatted = String.format("%.1f", hours);
+
+        System.out.println("My name is "+name+", my Instagram has " + followers + " followers, " +
+                "I have posted " + posts + " posts, and I use Instagram for " + hoursFormatted + " hours daily.");
+
+        scanner.close();
+    }
+}
