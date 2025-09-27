@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class PersonInfo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int age = scanner.nextInt();
+        double height = scanner.nextDouble();
+        String name = scanner.next();
+
+        // Print output formatted with height to 2 decimal places
+        System.out.printf("%s is %d years old and %.2f meters tall.%n", name, age, height);
+
+        scanner.close();
+    }
+}
